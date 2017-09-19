@@ -1,0 +1,20 @@
+{
+	"name" : "Quick Execute",
+	"version" : "1.0",
+	"author" : "Winston Marvel",
+	 "manifest_version" : 2,
+	"description": "Executes shell commands from the browser as well as opens folders directly from the browser. Requires a PHP server to be running.",
+	"browser_action":{
+		"default_icon": "icon.png",
+		"default_popup" : "popup.html"
+	},
+	"icons":{
+      "128": "icon128.png"
+   }
+	,
+
+	"permissions" : [  "contextMenus" ],
+	"background" :{
+		"scripts": ["handler.js"]
+	}
+}
